@@ -1,5 +1,8 @@
 # Basic Cubemap shader (WIP)
 
+** ToDo **
+- remove translation section from view matrix so cubemap stays in static position when camera moves.
+
 Sample project for the defold game engine.
 
 resources:
