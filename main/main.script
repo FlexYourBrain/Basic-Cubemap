@@ -1,0 +1,14 @@
+local cam = "/offset#camera"
+local cam_pivot = "/camera"
+local skybox = "/skycube#model"
+
+
+function init(self)
+	msg.post(".", "acquire_input_focus")
+	msg.post("@render:", "use_camera_projection")
+	msg.post(cam, "acquire_camera_focus")
+	
+	-- "euler.y" "position.y"
+	go.animate(cam_pivot, "euler.y", go.PLAYBACK_LOOP_FORWARD, -360, go.EASING_OUTINSINE, 20)
+
+end

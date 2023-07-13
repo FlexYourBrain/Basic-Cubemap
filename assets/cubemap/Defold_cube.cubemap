@@ -1,0 +1,6 @@
+right: "/assets/cubemap/Defold_skybox_posx.png"
+left: "/assets/cubemap/Defold_skybox_negx.png"
+top: "/assets/cubemap/Defold_skybox_posy.png"
+bottom: "/assets/cubemap/Defold_skybox_negy.png"
+front: "/assets/cubemap/Defold_skybox_posz.png"
+back: "/assets/cubemap/Defold_skybox_negz.png"

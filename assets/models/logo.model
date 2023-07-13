@@ -1,0 +1,7 @@
+mesh: "/assets/models/Defold_logo.glb"
+material: "/assets/images/unlit.material"
+textures: "/assets/images/Defold_3dLogo_Albedo.png"
+skeleton: ""
+animations: ""
+default_animation: ""
+name: "logo"

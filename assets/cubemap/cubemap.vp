@@ -1,0 +1,19 @@
+
+attribute highp vec4 position;
+uniform mediump mat4 worldview;
+uniform mediump mat4 vproj;
+
+varying highp vec4 var_position;
+
+void main()
+{
+    mat4 mapview = mat4(mat3(worldview));
+    // mapview[3][0] = 0.0;
+    // mapview[3][1] = 0.0;
+    // mapview[3][2] = 0.0;
+    // mapview[3][3] = 0.31;
+    
+    vec4 p = worldview * position;
+    var_position = p;
+    gl_Position = vproj * p.xyzw;
+}

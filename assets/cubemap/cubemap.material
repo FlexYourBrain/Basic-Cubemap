@@ -1,0 +1,24 @@
+name: "cubemap"
+tags: "skybox"
+vertex_program: "/assets/cubemap/cubemap.vp"
+fragment_program: "/assets/cubemap/cubemap.fp"
+vertex_space: VERTEX_SPACE_LOCAL
+vertex_constants {
+  name: "worldview"
+  type: CONSTANT_TYPE_WORLDVIEW
+}
+vertex_constants {
+  name: "vproj"
+  type: CONSTANT_TYPE_VIEWPROJ
+}
+fragment_constants {
+  name: "tint"
+  type: CONSTANT_TYPE_USER
+  value {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+    w: 1.0
+  }
+}
+max_page_count: 0
